@@ -6,9 +6,10 @@ Dynamic thread pool implemented by C language
 ```
 ../Dynamic_threadpool_c/
 ├── log.debug.txt
-├── main.c
 ├── Makefile
-├── threadpool.h
+├── main.c
+├── threadpool
+├── Threadpool.h
 └── Threadpool.c
 ```
 
