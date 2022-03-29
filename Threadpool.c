@@ -169,7 +169,7 @@ static void *manager(void *arg)
         pthread_mutex_unlock(&pool->mutexBusy);
 
         count = 0;
-        if (numLive < queueSize && numLive < pool->numMax) // 当存活线程数小于待取任务数量，并且小于最大线程数
+        if ((numLive < queueSize || numBusy > numLive*0.8) && numLive < pool->numMax) // 当存活线程数小于待取任务数量，并且小于最大线程数
         {
             pthread_mutex_lock(&pool->mutexPool); // 添加 NUMSTEP 步长的线程
             for (i = 0; pool->numLive < pool->numMax && count < NUMSTEP && i < pool->numMax; i++)
