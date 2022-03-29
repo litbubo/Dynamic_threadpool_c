@@ -24,8 +24,9 @@ Dynamic thread pool implemented by C language
 ### 部署
 
  ```
- git clone https://github.com/litbubo/Dynamic_threadpool_c.git
- cd Dynamic_threadpool_c/
- make
+ $ git clone https://github.com/litbubo/Dynamic_threadpool_c.git
+ $ cd Dynamic_threadpool_c/
+ $ make
+ $ ./threadpool
  ```
 
