@@ -8,7 +8,7 @@ Dynamic thread pool implemented by C language
 ├── log.debug.txt
 ├── main.c
 ├── Makefile
-├── threadpool
+├── threadpool.h
 └── Threadpool.c
 ```
 
