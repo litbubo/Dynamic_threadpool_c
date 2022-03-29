@@ -1,3 +1,10 @@
+/**
+ *
+ * 测试线程池代码
+ *
+ *
+ */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
@@ -12,7 +19,7 @@ void taskFunc(void *arg)
 {
     int num = *(int *)arg;
     struct timeval tv;
-    printf("[ thread = %ld ] is working, number = %d\n", pthread_self(), num);
+    printf("[thread = %ld] is working, number = %d\n", pthread_self(), num);
     tv.tv_sec = 0;
     tv.tv_usec = 100000;
     select(0, NULL, NULL, NULL, &tv);
